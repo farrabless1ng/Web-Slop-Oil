@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.general {
+    margin: auto;
+    width: 80%;
+    height: 100%; 
+}
+
+body{
+    font-family: sans-serif;
+    position: relative;
+}
+
+a{
+   text-decoration: none;
+   color: white; 
+}
+/*-------------------------------- navigator bar -------------------------------*/
+.background-container{
+    width: 100%;
+    height: 200px;
+    min-height: 200px;
+    position: absolute;  
+}
+
+header{
+    width: 100%;
+    min-height: 200px;
+    position: relative;
+}
+
+
+
+.background-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navigator-bar{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    min-height: 50px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+}
+
+.logo{
+    display:flex;
+    align-items: center;
+}
+
+.logo-img{
+    height: 80px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.nombre-logo{
+    color: white;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 15px;
+}
+
+nav a:hover{
+    color: brown;
+}
+
+@media (max-width: 700px){
+    .navigator-bar{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+
+/*--------------------------primera seccion-------------------------------*/
+.parte-1{
+    background-color: #FFD700;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container-part-1{
+    background: url(images/7team.jpeg) no-repeat;
+    background-position: 2% 50%;
+    padding: 5%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-size: 50% 90%;
+    border-radius: 10px;
+}
+
+.inner-container
+{
+    width: 55%;
+    float: right;
+    padding: 3%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+.inner-container p{
+    text-align: justify;
+}
+
+
+/*--------------------------segunda seccion-------------------------------*/
+.parte-2{
+    background-color: #FFD700;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container-part-2{
+    background: url(images/servicio9.2.png) no-repeat;
+    background-position: 97% 50%;
+    padding: 40px 10px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-size: 62% 90%;
+    border-radius: 10px;
+   
+}
+
+.inner-container-2
+{
+    width: 55%;
+    float: left;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+.inner-container p{
+    text-align: justify;
+}
+
+
+
+/*-------------------------- MEDIAS  -------------------------------*/
+
+
+/*-------------------------- Primer contenedor-------------------------------*/
+@media screen and (max-width:1000px){
+    .container-part-1{
+        background-size:75% 90%;
+        background-position: 10%;
+        padding: 5%;                                                                                       
+    }
+
+    .inner-container{
+        padding: 10px;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:800px){
+    .container-part-1{
+        background-size:75% 90%;
+        background-position: 10%;
+        padding: 5%;                                                                                       
+    }
+
+    .inner-container{
+        padding: 10px;
+        width: 70%;
+    }
+}
+@media screen and (max-width:600px){
+    .container-part-1{
+        background-size:100% 90%;                                                                                     
+    }
+
+    .inner-container{
+        padding: 15px;
+        width: 100%;
+        float: none;
+    }
+}
+
+
+
+
+
+
+/*-------------------------- segundo contenedor-------------------------------*/
+@media screen and (max-width:1000px){
+    .container-part-2{
+        background-size:75% 90%;
+        background-position: 91%;
+        padding: 5%; 
+        margin: 10px 0;                                                                                          
+    }
+
+    .inner-container-2{
+        padding: 10px;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:800px){
+    .container-part-2{
+        background-size:75% 92%;
+        background-position: 91%;
+        padding: 5%;   
+                                                                                        
+    }
+
+    .inner-container-2{
+        padding: 10px;
+        width: 70%;
+    }
+}
+@media screen and (max-width:600px){
+    .container-part-2{
+        background-size:100% 90%;                                                                                     
+    }
+
+    .inner-container-2{
+        padding: 15px;
+        width: 100%;
+        float: none;
+    }
+}

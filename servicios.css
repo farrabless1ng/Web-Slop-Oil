@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.general {
+    margin: auto;
+    width: 90%;
+    height: 100%;
+    background-color: white;  
+}
+
+body{
+    font-family: sans-serif;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+a{
+   text-decoration: none;
+   color: white; 
+}
+/*-------------------------------- navigator bar -------------------------------*/
+.background-container{
+    width: 100%;
+    height: 200px;
+    min-height: 200px;
+    position: absolute;  
+}
+
+header{
+    width: 100%;
+    min-height: 200px;
+    position: relative;
+}
+
+
+
+.background-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navigator-bar{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    min-height: 50px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+}
+
+.logo{
+    display:flex;
+    align-items: center;
+}
+
+.logo-img{
+    height: 80px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.nombre-logo{
+    color: white;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 15px;
+}
+
+nav a:hover{
+    color: brown;
+}
+
+@media (max-width: 700px){
+    .navigator-bar{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+/*-------------------------------- parte 1 -------------------------------*/
+.parte1{
+    max-height: fit-content;
+    background-color: #FFD700;
+    display: flex;
+    color: white;   
+}
+.outter-container{
+    display: inline;
+    justify-content: center; 
+}
+ .inner-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin-top: 8%;
+ }
+
+ .inner-container .card{
+    width: 308px;
+    position: relative;
+    height: 400px;
+    background: whitesmoke;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0.5px 10px #e6e6e6;
+    transition: 0.3s ease-in-out;
+    margin-top: 5%;
+    
+ }
+
+ .inner-container .card .imgbx{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 1.2);
+}
+
+.inner-container .card .imgbx img{
+    height: 200px;
+    max-width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+p{
+    color: black;
+}
+h2{
+    color: black;
+}

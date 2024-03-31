@@ -1,0 +1,597 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.general {
+    margin: auto;
+    width: 80%;
+    height: 100%;
+    background-color: white;  
+}
+
+body{
+    font-family: sans-serif;
+    position: relative;
+}
+
+a{
+   text-decoration: none;
+   color: white; 
+}
+/*-------------------------------- Home -------------------------------*/
+header{
+    width: 100%;
+    min-height: 400px;
+    position: relative;
+}
+
+.background-container{
+    width: 100%;
+    height: 400px;
+    min-height: 320px;
+    position: absolute;   
+}
+
+.background-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navigator-bar{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    min-height: 50px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    overflow: hidden;
+  
+}
+
+.logo{
+    display:flex;
+    align-items: center;
+}
+
+.logo-img{
+    height: 80px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.logo-img2{
+    height: 80px;
+    margin-left: 87%;
+    position: absolute;
+
+}
+
+/*.navigator-bar nav{
+    position: absolute;
+    right: 140px;
+    bottom: 40px;
+}*/
+
+.nombre-logo{
+    color: white;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 15px;
+}
+
+nav a:hover{
+    color: brown;
+}
+
+@media (max-width: 900px){
+    .navigator-bar{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+/*--------------------------------About us-------------------------------*/
+.seccion-nosotros{
+    min-height: 200px;
+    background-color: rgb(255, 190, 0);
+    color: white;
+    
+}
+
+.background-color{
+    min-height: 400px;
+    background-color: rgb(255, 190, 0);
+    position: relative;
+}
+
+.container-nosotros{
+    background-color: rgba(0, 0, 0, 1);
+    position: absolute;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    height: 90%;
+    width: 100%;
+}
+
+.contenido-nosotros{
+    position: relative;
+}
+
+.titulo-nosotros{
+    text-align: center;
+}
+
+.texto-nosotros{
+    display: flex;
+    width: 50%;
+    text-align: justify;
+    align-items: center;
+    margin-top: 3%;
+    position: absolute;
+    font-size: 20px;
+    
+}
+
+.imagenes-nosotros{
+    display: flex;
+    margin-left:54%;
+}
+
+.imagenes-nosotros img{
+    width: 45%;
+    height: 200px; 
+    max-height: 200px; 
+    object-fit: cover; 
+    margin:1%; 
+    border-radius: 5px;
+    margin-top: 5%;
+}
+
+
+
+
+@media (max-width: 1200px) {
+    .seccion-nosotros {
+        height: 80vh; /* Cambia la altura a automático para adaptarse al contenido */
+ /* Añade un relleno para espaciar el contenido */
+    }
+    .background-color{
+        height: 80vh;
+    }
+    .imagenes-nosotros img{
+         height: 200px;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .seccion-nosotros {
+        height: 550px; /* Cambia la altura a automático para adaptarse al contenido */
+        padding: 20px; /* Añade un relleno para espaciar el contenido */
+    }
+    .background-color{
+        height: 530px;
+    }
+    .texto-nosotros {
+        width: 100%; /* Cambia el ancho del texto a 100% para llenar el contenedor */
+        position: static; /* Cambia la posición a estática para que fluya con el documento */
+    }
+    .container-nosotros {
+        display: flex;
+        flex-direction: column; /* Cambia la dirección de la fila a columna para dispositivos móviles */
+        align-items: center; /* Centra los elementos verticalmente */
+        height: auto; /* Cambia la altura a automático para adaptarse al contenido */
+
+    }
+    .imagenes-nosotros {
+        width: 100%;
+        margin-left: 3% ;
+        overflow: hidden;
+    }
+    
+}
+
+
+@media (max-width: 800px) {
+    .seccion-nosotros {
+        height: 570px; /* Cambia la altura a automático para adaptarse al contenido */
+        padding: 20px; /* Añade un relleno para espaciar el contenido */
+    }
+    .background-color{
+        height: 550px;
+    }
+    .texto-nosotros {
+        width: 100%; /* Cambia el ancho del texto a 100% para llenar el contenedor */
+        position: static; /* Cambia la posición a estática para que fluya con el documento */
+    }
+    .container-nosotros {
+        display: flex;
+        flex-direction: column; /* Cambia la dirección de la fila a columna para dispositivos móviles */
+        align-items: center; /* Centra los elementos verticalmente */
+        height: auto; /* Cambia la altura a automático para adaptarse al contenido */
+
+    }
+    .imagenes-nosotros {
+        width: 100%;
+        margin-left: 3% ;
+        overflow: hidden;
+    }
+    
+}
+
+
+@media (max-width: 600px) {
+    .seccion-nosotros {
+        height: 650px; /* Cambia la altura a automático para adaptarse al contenido */
+        padding: 20px; /* Añade un relleno para espaciar el contenido */
+    }
+    .background-color{
+        height: 630px;
+    }
+    .texto-nosotros {
+        width: 100%; /* Cambia el ancho del texto a 100% para llenar el contenedor */
+        position: static; /* Cambia la posición a estática para que fluya con el documento */
+    }
+    .container-nosotros {
+        display: flex;
+        flex-direction: column; /* Cambia la dirección de la fila a columna para dispositivos móviles */
+        align-items: center; /* Centra los elementos verticalmente */
+        height: auto; /* Cambia la altura a automático para adaptarse al contenido */
+
+    }
+    .imagenes-nosotros {
+        width: 100%;
+        margin-left: 3% ;
+        overflow: hidden;
+    }
+    
+}
+/*--------------------------------  Services -------------------------------*/
+.seccion-services{
+    height: 80vh;
+    background-color: black;
+    color: white;
+    
+}
+
+.background-color-services{
+    height: 80vh;
+    background-color: black;
+    position: relative;
+}
+
+.container-services{
+    background-color: rgba(0, 0, 0, 1);
+    position: absolute;
+    margin-top: 40px;
+    padding: 15px;
+    border-radius: 10px;
+    height: 90%;
+    width: 100%;
+}
+
+.content-services{
+    position: relative;
+}
+
+.title-services{
+    text-align: center;
+    margin-top: -10px;
+}
+
+.text-services{
+    display: flex;
+    width: 50%;
+    text-align: justify;
+    align-items: center;
+    margin-top: 3%;
+    position: absolute;
+    font-size: 20px;
+    
+}
+
+.imagenes-services{
+    display: flex;
+    margin-left:54%;
+}
+
+.imagenes-services img{
+    width: 45%;
+    height: 200px;
+    max-height: 400px; 
+    object-fit: cover; 
+    margin:1%; 
+    border-radius: 5px;
+    margin-top: 12%;
+}
+
+
+
+@media (max-width: 1400px) {
+    .seccion-services {
+        height: 95vh; /* Cambia la altura a automático para adaptarse al contenido */
+        padding: 20px; /* Añade un relleno para espaciar el contenido */
+    }
+
+    .background-color-services{
+        height: 90vh;
+    }
+    .imagenes-services img{
+        margin-top: 7%;
+        height: 250px;
+    }
+}
+
+
+
+@media (max-width: 1200px) {
+    .seccion-services {
+        height: 100vh; /* Cambia la altura a automático para adaptarse al contenido */
+        padding: 20px; /* Añade un relleno para espaciar el contenido */
+    }
+    .background-color-services{
+        height: 95vh;
+    }
+    .imagenes-services img{
+        margin-top: 7%;
+        height: 300px;
+    }
+}
+
+
+
+@media (max-width: 1000px) {
+    .seccion-services {
+        height: 125vh; /* Cambia la altura a automático para adaptarse al contenido */
+             /* Añade un relleno para espaciar el contenido */
+    }
+    .background-color-services{
+        height: 120vh;
+    }
+    .text-services {
+        width: 100%; /* Cambia el ancho del texto a 100% para llenar el contenedor */
+        position: static; /* Cambia la posición a estática para que fluya con el documento */
+    }
+    .container-services {
+        display: flex;
+        flex-direction: column; /* Cambia la dirección de la fila a columna para dispositivos móviles */
+        align-items: center; /* Centra los elementos verticalmente */
+        height: auto; /* Cambia la altura a automático para adaptarse al contenido */
+
+    }
+    .imagenes-services {
+        width: 100%;
+        height: 300px;
+        margin-left: 3% ;
+        overflow: hidden;
+        margin-top: -5%;
+    }
+    
+}
+
+
+@media (max-width: 800px) {
+    .seccion-services {
+        height: 145vh; /* Cambia la altura a automático para adaptarse al contenido */
+             /* Añade un relleno para espaciar el contenido */
+    }
+    .background-color-services{
+        height: 140vh;
+    }
+    .text-services {
+        width: 100%; /* Cambia el ancho del texto a 100% para llenar el contenedor */
+        position: static; /* Cambia la posición a estática para que fluya con el documento */
+    }
+    .container-services {
+        display: flex;
+        flex-direction: column; /* Cambia la dirección de la fila a columna para dispositivos móviles */
+        align-items: center; /* Centra los elementos verticalmente */
+        height: auto; /* Cambia la altura a automático para adaptarse al contenido */
+
+    }
+    .imagenes-services {
+        width: 100%;
+        height: 300px;
+        margin-left: 3% ;
+        overflow: hidden;
+        margin-top: -5%;
+    }
+    
+}
+
+
+@media (max-width: 600px) {
+    .seccion-services {
+        height: 170vh; /* Cambia la altura a automático para adaptarse al contenido */
+             /* Añade un relleno para espaciar el contenido */
+    }
+    .background-color-services{
+        height: 165vh;
+    }
+    .text-services {
+        width: 100%; /* Cambia el ancho del texto a 100% para llenar el contenedor */
+        position: static; /* Cambia la posición a estática para que fluya con el documento */
+    }
+    .container-services {
+        display: flex;
+        flex-direction: column; /* Cambia la dirección de la fila a columna para dispositivos móviles */
+        align-items: center; /* Centra los elementos verticalmente */
+        height: auto; /* Cambia la altura a automático para adaptarse al contenido */
+
+    }
+    .imagenes-services {
+        width: 100%;
+        height: 300px;
+        margin-left: 3% ;
+        overflow: hidden;
+    }
+    
+}
+
+/*.seccion-servicios{
+    height: 400px;
+    background-color: black;
+    color: white;
+}
+
+.background-color-services{
+    height: 400px;
+    background-color: black;
+    position: relative;
+}
+
+
+.container-services{
+    background-color: black;
+    position: absolute;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    height: 90%;
+    width: 100%;
+}
+
+.content-services{
+    position: relative;
+}
+
+.services-title{
+    text-align: center;
+    margin-top: -10px;
+}
+
+.text-services{
+    display: flex;
+    width: 50%;
+    text-align: justify;
+    align-items: center;
+    position: absolute;
+    font-size: 18px;
+    left: 50%;
+    margin-top: 2%;
+}
+
+.imagenes-servicios{
+    display: flex;
+    margin-right: 20%;
+}
+
+.imagenes-servicios img{
+    width: 27%;
+    height: 200px; 
+    max-height: 200px; 
+    object-fit: cover; 
+    margin:1%; 
+    border-radius: 5px;
+    margin-top: 5%;
+}
+
+
+
+
+@media (max-width: 800px) {
+    .seccion-servicios {
+        height: 700px; /* Cambia la altura a automático para adaptarse al contenido 
+        padding: 20px; /* Añade un relleno para espaciar el contenido 
+    }
+
+    .background-color-services{
+        height: 675px;
+    }
+    .container-services{
+        height: 600px;
+    }
+
+    .text-services {
+        width: 100%; /* Cambia el ancho del texto a 100% para llenar el contenedor */ /* Elimina el margen superior para alinear el texto verticalmente        position: static; /* Cambia la posición a estática para que fluya con el documento 
+    }
+
+    .imagenes-servicios {
+        width: 70%;
+        margin-left: 3% ;
+        overflow: hidden;
+    }
+    
+} */
+
+
+
+
+/*--------------------------------Contact us-------------------------------*/
+
+.seccion-contactenos{
+    height: 400px;
+    background-color: white;
+    padding: 15px;
+}
+
+.background-color-contactenos{
+    height: 400px;
+    background-color: white;
+}
+
+.contact-title{
+    text-align: center;
+}
+  
+  form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-left: 200px;
+    width: 60%;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 50%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+label {
+  font-weight: bold;
+  color: black;
+}
+
+
+@media (max-width: 1000px) {
+    form {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
