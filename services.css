@@ -127,13 +127,17 @@ p{
     margin: 25px auto;
     text-align: center;
     background-color: rgb(255, 190, 0);
+    border: 2px solid black; /* Borde negro */
+    padding: 10px; /* Espacio entre el borde y las tarjetas */
 }
 
 .card{
+    position: relative;
     flex:1;
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     margin: 0px 20px;
     padding: 20px 20px;
@@ -145,7 +149,6 @@ p{
     width: 90%; 
     height: 200px;
     object-fit: contain; 
-    
 }
 
 
@@ -160,6 +163,7 @@ p{
     overflow: hidden;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .itemCarrusel{
@@ -170,9 +174,11 @@ p{
 }
 
 .tarjetaCarrusel{
+    position: absolute;
     background-color: black;
     height: 100%;
     width: 100%;
+    
 }
 
 .flechasCarrusel{
@@ -183,7 +189,6 @@ p{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
 }
 
 
@@ -203,8 +208,37 @@ a{
 
 
 
-
+/*-------------------------- responsive area --------------------*/
 @media (max-width: 1200px) {
+    .general {
+        margin: auto;
+        width: 85%;
+        height: 100%;
+        background-color: rgb(255, 190, 0);  
+    }
+    .services {
+        flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en varias filas */
+        border: 2px solid black; /* Borde negro */
+        padding: 10px; /* Espacio entre el borde y las tarjetas */
+      }
+
+      
+    
+      .parte1 .card:last-child {
+        margin-top: 20px;
+        margin-left: 230px; /* Ajusta el margen izquierdo para que la tercera tarjeta esté centrada */
+        margin-right: 250px; /* Ajusta el margen derecho para que la tercera tarjeta esté centrada */
+    }
+    .parte2 .card:last-child {
+        margin-top: 20px;
+        margin-left: 230px; /* Ajusta el margen izquierdo para que la tercera tarjeta esté centrada */
+        margin-right: 250px; /* Ajusta el margen derecho para que la tercera tarjeta esté centrada */
+    }
+    .parte3 .card:last-child {
+        margin-top: 20px;
+        margin-left: 230px; /* Ajusta el margen izquierdo para que la tercera tarjeta esté centrada */
+        margin-right: 250px; /* Ajusta el margen derecho para que la tercera tarjeta esté centrada */
+    }
     
 }
 
@@ -212,62 +246,75 @@ a{
 @media (max-width: 1000px) {
     .services {
       flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en varias filas */
+      border: 2px solid black;
     }
     
     .card {
-      flex-basis: 30%; /* Establece el ancho base de las tarjetas a aproximadamente el 45% del contenedor padre */
-      margin: 10px; /* Ajusta el margen para que las tarjetas estén centradas */
-    }
-
-    .parte1 .card:last-child {
-        margin-left: 230px; /* Ajusta el margen izquierdo para que la tercera tarjeta esté centrada */
-        margin-right: 250px; /* Ajusta el margen derecho para que la tercera tarjeta esté centrada */
-    }
-
-    .parte2 .card:last-child {
-        margin-left: 230px; /* Ajusta el margen izquierdo para que la tercera tarjeta esté centrada */
-        margin-right: 250px; /* Ajusta el margen derecho para que la tercera tarjeta esté centrada */
-    }
-
-    .parte3 .card:last-child {
-        margin-left: 230px; /* Ajusta el margen izquierdo para que la tercera tarjeta esté centrada */
-        margin-right: 250px; /* Ajusta el margen derecho para que la tercera tarjeta esté centrada */
-    }
+        flex-basis: 30%; /* Establece el ancho base de las tarjetas a aproximadamente el 45% del contenedor padre */
+        margin: 10px 10%; /* Ajusta el margen para que las tarjetas estén centradas */
+      }
+  
+      .parte1 .card:last-child {
+          margin: 10px 10%; /* Centra la tarjeta */
+      }
+  
+      .parte2 .card:last-child {
+          margin: 10px 10%; /* Centra la tarjeta */
+      }
+  
+      .parte3 .card:last-child {
+          margin: 10px 10%; /* Centra la tarjeta */
+      }
+    
   }  
 
-
-
-  @media (max-width: 700px) {
+  @media (max-width: 800px) {
     .services {
       flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en varias filas */
     }
     
     .card {
-      flex-basis: 80%; /* Establece el ancho base de las tarjetas a aproximadamente el 45% del contenedor padre */
-      margin-left: 10%;
-      margin-right: 10%;/* Ajusta el margen para que las tarjetas estén centradas */
+      flex-basis: 30%; /* Establece el ancho base de las tarjetas a aproximadamente el 45% del contenedor padre */
+      margin: 10px 10%; /* Ajusta el margen para que las tarjetas estén centradas */
     }
 
     .parte1 .card:last-child {
-        margin-left: 60px; /* Ajusta el margen izquierdo para que la tercera tarjeta esté centrada */
-        margin-right: 60px; /* Ajusta el margen derecho para que la tercera tarjeta esté centrada */
+        margin: 10px 10%; /* Centra la tarjeta */
     }
 
     .parte2 .card:last-child {
-        margin-left: 60px; /* Ajusta el margen izquierdo para que la tercera tarjeta esté centrada */
-        margin-right: 60px; /* Ajusta el margen derecho para que la tercera tarjeta esté centrada */
+        margin: 10px 10%; /* Centra la tarjeta */
     }
 
     .parte3 .card:last-child {
-        margin-left: 60px; /* Ajusta el margen izquierdo para que la tercera tarjeta esté centrada */
-        margin-right: 60px; /* Ajusta el margen derecho para que la tercera tarjeta esté centrada */
+        margin: 10px 10%; /* Centra la tarjeta */
     }
+  }  
 
-    .parte4 .card:last-child {
-        margin-left: 60px; /* Ajusta el margen izquierdo para que la tercera tarjeta esté centrada */
-        margin-right: 60px; /* Ajusta el margen derecho para que la tercera tarjeta esté centrada */
 
+  @media (max-width: 550px) {
+    .services {
+      flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en varias filas */
     }
+    
+    .card {
+        flex-basis: 30%; /* Establece el ancho base de las tarjetas a aproximadamente el 45% del contenedor padre */
+        margin: 10px 5%; /* Ajusta el margen para que las tarjetas estén centradas */
+      }
+  
+      .parte1 .card:last-child {
+          margin: 10px 5%; /* Centra la tarjeta */
+      }
+  
+      .parte2 .card:last-child {
+          margin: 10px 5%; /* Centra la tarjeta */
+      }
+  
+      .parte3 .card:last-child {
+          margin: 10px 5%; /* Centra la tarjeta */
+      }
+    
+   
     .parte2{
         margin: 0px 0px;
     }

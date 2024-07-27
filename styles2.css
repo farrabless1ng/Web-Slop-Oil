@@ -208,11 +208,11 @@ nav a:hover{
 
 @media (max-width: 800px) {
     .seccion-nosotros {
-        height: 570px; /* Cambia la altura a automático para adaptarse al contenido */
+        height: 625px; /* Cambia la altura a automático para adaptarse al contenido */
         padding: 20px; /* Añade un relleno para espaciar el contenido */
     }
     .background-color{
-        height: 550px;
+        height: 600px;
     }
     .texto-nosotros {
         width: 100%; /* Cambia el ancho del texto a 100% para llenar el contenedor */
@@ -236,11 +236,11 @@ nav a:hover{
 
 @media (max-width: 600px) {
     .seccion-nosotros {
-        height: 650px; /* Cambia la altura a automático para adaptarse al contenido */
+        height: 700px; /* Cambia la altura a automático para adaptarse al contenido */
         padding: 20px; /* Añade un relleno para espaciar el contenido */
     }
     .background-color{
-        height: 630px;
+        height: 680px;
     }
     .texto-nosotros {
         width: 100%; /* Cambia el ancho del texto a 100% para llenar el contenedor */
@@ -277,7 +277,7 @@ nav a:hover{
 .container-services{
     background-color: rgba(0, 0, 0, 1);
     position: absolute;
-    margin-top: 40px;
+    margin-top: 20px;
     padding: 15px;
     border-radius: 10px;
     height: 90%;
@@ -320,15 +320,15 @@ nav a:hover{
 }
 
 
-
+/*--------------------------------- responsive area ---------------------------------*/
 @media (max-width: 1400px) {
     .seccion-services {
-        height: 95vh; /* Cambia la altura a automático para adaptarse al contenido */
+        height: 90vh; /* Cambia la altura a automático para adaptarse al contenido */
         padding: 20px; /* Añade un relleno para espaciar el contenido */
     }
 
     .background-color-services{
-        height: 90vh;
+        height: 85vh;
     }
     .imagenes-services img{
         margin-top: 7%;
@@ -347,7 +347,7 @@ nav a:hover{
         height: 95vh;
     }
     .imagenes-services img{
-        margin-top: 7%;
+        margin-top: 9%;
         height: 300px;
     }
 }
@@ -356,11 +356,11 @@ nav a:hover{
 
 @media (max-width: 1000px) {
     .seccion-services {
-        height: 125vh; /* Cambia la altura a automático para adaptarse al contenido */
+        height: 130vh; /* Cambia la altura a automático para adaptarse al contenido */
              /* Añade un relleno para espaciar el contenido */
     }
     .background-color-services{
-        height: 120vh;
+        height: 125vh;
     }
     .text-services {
         width: 100%; /* Cambia el ancho del texto a 100% para llenar el contenedor */
@@ -373,12 +373,12 @@ nav a:hover{
         height: auto; /* Cambia la altura a automático para adaptarse al contenido */
 
     }
-    .imagenes-services {
+    .imagenes-services { /*contenedor de las imagenes*/
         width: 100%;
         height: 300px;
         margin-left: 3% ;
         overflow: hidden;
-        margin-top: -5%;
+        margin-top: -2%;
     }
     
 }
@@ -386,11 +386,11 @@ nav a:hover{
 
 @media (max-width: 800px) {
     .seccion-services {
-        height: 145vh; /* Cambia la altura a automático para adaptarse al contenido */
+        height: 135vh; /* Cambia la altura a automático para adaptarse al contenido */
              /* Añade un relleno para espaciar el contenido */
     }
     .background-color-services{
-        height: 140vh;
+        height: 130vh;
     }
     .text-services {
         width: 100%; /* Cambia el ancho del texto a 100% para llenar el contenedor */
@@ -404,11 +404,11 @@ nav a:hover{
 
     }
     .imagenes-services {
-        width: 100%;
+        width: 90%;
         height: 300px;
-        margin-left: 3% ;
+        margin-left: 8% ;
         overflow: hidden;
-        margin-top: -5%;
+        margin-top: -2%;
     }
     
 }
@@ -416,11 +416,11 @@ nav a:hover{
 
 @media (max-width: 600px) {
     .seccion-services {
-        height: 170vh; /* Cambia la altura a automático para adaptarse al contenido */
+        height: 160vh; /* Cambia la altura a automático para adaptarse al contenido */
              /* Añade un relleno para espaciar el contenido */
     }
     .background-color-services{
-        height: 165vh;
+        height: 155vh;
     }
     .text-services {
         width: 100%; /* Cambia el ancho del texto a 100% para llenar el contenedor */
@@ -442,94 +442,33 @@ nav a:hover{
     
 }
 
-/*.seccion-servicios{
-    height: 400px;
-    background-color: black;
-    color: white;
-}
-
-.background-color-services{
-    height: 400px;
-    background-color: black;
-    position: relative;
-}
-
-
-.container-services{
-    background-color: black;
-    position: absolute;
-    margin-top: 20px;
-    padding: 15px;
-    border-radius: 10px;
-    height: 90%;
-    width: 100%;
-}
-
-.content-services{
-    position: relative;
-}
-
-.services-title{
-    text-align: center;
-    margin-top: -10px;
-}
-
-.text-services{
-    display: flex;
-    width: 50%;
-    text-align: justify;
-    align-items: center;
-    position: absolute;
-    font-size: 18px;
-    left: 50%;
-    margin-top: 2%;
-}
-
-.imagenes-servicios{
-    display: flex;
-    margin-right: 20%;
-}
-
-.imagenes-servicios img{
-    width: 27%;
-    height: 200px; 
-    max-height: 200px; 
-    object-fit: cover; 
-    margin:1%; 
-    border-radius: 5px;
-    margin-top: 5%;
-}
-
-
-
-
-@media (max-width: 800px) {
-    .seccion-servicios {
-        height: 700px; /* Cambia la altura a automático para adaptarse al contenido 
-        padding: 20px; /* Añade un relleno para espaciar el contenido 
+@media (max-width: 460px) {
+    .seccion-services {
+        height: auto; /* Cambia la altura a automático para adaptarse al contenido */
+             /* Añade un relleno para espaciar el contenido */
     }
-
     .background-color-services{
-        height: 675px;
+        height: 160vh;
     }
-    .container-services{
-        height: 600px;
-    }
-
     .text-services {
-        width: 100%; /* Cambia el ancho del texto a 100% para llenar el contenedor */ /* Elimina el margen superior para alinear el texto verticalmente        position: static; /* Cambia la posición a estática para que fluya con el documento 
+        width: 100%; /* Cambia el ancho del texto a 100% para llenar el contenedor */
+        position: static; /* Cambia la posición a estática para que fluya con el documento */
     }
+    .container-services {
+        display: flex;
+        flex-direction: column; /* Cambia la dirección de la fila a columna para dispositivos móviles */
+        align-items: center; /* Centra los elementos verticalmente */
+        height: auto; /* Cambia la altura a automático para adaptarse al contenido */
 
-    .imagenes-servicios {
-        width: 70%;
+    }
+    .imagenes-services {
+        width: 100%;
+        height: 300px;
         margin-left: 3% ;
         overflow: hidden;
     }
     
-} */
-
-
-
+}
 
 /*--------------------------------Contact us-------------------------------*/
 
